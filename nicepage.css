@@ -43088,31 +43088,16 @@ a.u-link.u-text-hover-grey-90:hover {
 }
  .u-footer {
   background-image: none;
+  min-height: 339px;
 }
 
-.u-footer .u-sheet-1 {
-  min-height: 120px;
+.u-footer .u-text-1 {
+  margin: 7px 0 60px;
 }
-@media (max-width: 1199px) {
-  .u-footer .u-sheet-1 {
-    min-height: 99px;
-  }
-}
-@media (max-width: 991px) {
-  .u-footer .u-sheet-1 {
-    min-height: 76px;
-  }
-}
-@media (max-width: 767px) {
-  .u-footer .u-sheet-1 {
-    min-height: 57px;
-  }
-}
-@media (max-width: 575px) {
-  .u-footer .u-sheet-1 {
-    min-height: 36px;
-  }
-}
+
+
+
+
 
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }

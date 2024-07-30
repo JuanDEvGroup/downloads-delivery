@@ -65,11 +65,11 @@
   letter-spacing: normal;
   font-weight: 400;
   text-transform: none;
-  margin: 10px 20px 0 60px;
+  margin: 12px 34px 0 46px;
 }
 
 .u-section-1 .u-text-2 {
-  margin: 30px 40px 0;
+  margin: 28px 40px 0;
 }
 
 .u-section-1 .u-btn-1 {
@@ -92,7 +92,7 @@
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
   width: 671px;
-  margin: -1111px calc(((100% - 1140px) / 2)  + -101px) 572px auto;
+  margin: -1111px calc(((100% - 1140px) / 2)  + -101px) 60px auto;
 }
 
 .u-section-1 .u-container-layout-2 {
