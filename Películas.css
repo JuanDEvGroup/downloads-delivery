@@ -127,7 +127,7 @@
 .u-section-3 .u-repeater-1 {
   grid-auto-columns: 100%;
   grid-template-columns: repeat(1, 100%);
-  min-height: 2332px;
+  min-height: 1763px;
   grid-gap: 23px;
 }
 

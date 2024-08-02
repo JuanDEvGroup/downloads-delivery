@@ -286,7 +286,8 @@
 
   .u-section-1 .u-group-1 {
     width: 340px;
-    margin-left: calc(((100% - 340px) / 2));
+    margin-top: -24px;
+    margin-left: auto;
   }
 
   .u-section-1 .u-container-layout-1 {
@@ -304,7 +305,7 @@
 
   .u-section-1 .u-group-2 {
     width: 340px;
-    margin-right: calc(((100% - 340px) / 2));
+    margin: -629px auto 12px calc(((100% - 340px) / 2)  + -15px);
   }
 
   .u-section-1 .u-container-layout-2 {
