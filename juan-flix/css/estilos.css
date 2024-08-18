@@ -234,4 +234,33 @@ header nav a.activo {
 }
 
 
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.terms {
+  font-size: 12px;
+}
+
+.terms a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
 
