@@ -14,6 +14,36 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+
+.banner {
+  background-color: #212121; /* Color de fondo oscuro del banner */
+  padding: 20px; /* Espacio entre el contenido y el borde del banner */
+  display: flex; /* Establece un layout flexible para alinear el logo y el texto */
+  align-items: center; /* Alinea verticalmente el contenido */
+  justify-content: space-between; /* Distribuye el contenido en el espacio disponible */
+  color: #fff; /* Color del texto en blanco */
+}
+
+.logo {
+  width: 200px; /* Ajusta el ancho según lo necesites */
+    height: auto; /* Mantiene la proporción original */
+    max-width: 100%; /* Asegura que no exceda el contenedor */
+  margin-right: 20px; /* Espacio entre el logo y el texto */
+  
+}
+
+.title-l {
+  font-size: 24px; /* Tamaño del título */
+  font-weight: bold; /* Peso del título */
+  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+  color: #fff; /* Color del título en blanco */
+}
+
+.p-l {
+  font-size: 16px; /* Tamaño del párrafo */
+  color: #ccc; /* Color del texto del párrafo en gris claro */
+}
+
 .contenedor {
 	width: 90%;
 	margin: auto;
