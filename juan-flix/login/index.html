@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Juan Flix+</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar sesion en Juan Flix+</h2>
+        <form id="loginForm">
+            <label for="email">Nombre de usuario:</label>
+            <input type="email" id="email" required>
+            <label for="password">Clave:</label>
+            <input type="password" id="password" required>
+            <button type="button" onclick="validateLogin()">Ingresar</button>
+            <div class="blank-space"></div>
+             <div class="blank-space"></div>
+              <div class="blank-space"></div>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

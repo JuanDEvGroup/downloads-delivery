@@ -37,6 +37,67 @@
 <body>
  
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+        }
+        .navbar-left, .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-left div, .navbar-right div {
+            margin-right: 16px;
+        }
+        .navbar-left .netflix-logo {
+            color: #e50914;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .navbar-left .browse, .navbar-right .search, .navbar-right .profile-name {
+            color: #e50914;
+            font-size: 18px;
+        }
+        .navbar-left .kids, .navbar-left .dvd, .navbar-right .search, .navbar-right .profile-name {
+            color: white;
+            font-size: 18px;
+        }
+        .navbar-right .profile {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-right .profile img {
+            border-radius: 4px;
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+        }
+    </style>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="netflix-logo">JUAN FLIX+</div>
+          
+        </div>
+        <div class="navbar-right">
+           
+            <div class="profile">
+                <img src="perfil.jpeg" alt="User profile picture" width="30" height="30" />
+                <div class="profile-name">Usuario 1<i class="fas fa-caret-down"></i></div>
+            </div>
+        </div>
+    </nav>
+
   <main>
     <div class="pelicula-principal">
       <div class="contenedor">
