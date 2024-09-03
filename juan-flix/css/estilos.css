@@ -294,3 +294,21 @@ footer {
 
 
 
+.boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+.boton:hover {
+	background: #fff;
+	color: #000;
+}
+.boton i {
+	margin-right: 1.25em;
+}

@@ -1,7 +1,7 @@
 const users = {
-    'juan': { password: 'j24', name: 'Juan Andres' },
-    'userad1': { password: 'p1try', name: 'Usuario Anónimo' },
-    'yolanda': { password: 'y4', name: 'Yolanda Camacho' }
+    'juan': { password: 'j24', name: 'Juan Andres', url: 'premium-j.html' },
+    'userad1': { password: 'p1try', name: 'Usuario Anónimo', url: 'premium-y.html' },
+    'yolanda': { password: 'y4', name: 'Yolanda Camacho', url: 'index.html' }
 };
 
 function validateLogin() {
@@ -11,9 +11,10 @@ function validateLogin() {
 
     if (users[email] && users[email].password === password) {
         const userName = users[email].name;
+        const userUrl = users[email].url;
         message.textContent = `Bienvenido, ${userName}`;
         message.style.color = 'green';
-        window.location.href = "premium.html"
+        window.location.href = userUrl;
     } else {
         message.textContent = 'Nombre o clave incorrectos';
         message.style.color = 'red';

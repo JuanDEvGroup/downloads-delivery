@@ -58,3 +58,9 @@ peliculas.forEach((pelicula) => {
 fila.addEventListener('mouseleave', () => {
 	peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
 });
+
+
+function loginAbrir() {
+
+	window.location.href = "https://juandevgroup.github.io/downloads-delivery/juan-flix/login/"
+}
