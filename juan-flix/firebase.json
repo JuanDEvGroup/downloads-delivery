@@ -1,0 +1,26 @@
+
+
+
+{
+  "functions": {
+    "wordpress": {
+      "runtime": "wordpress",
+      "handler": "index.php",
+      "region": "us-central1"
+    }
+  },
+  "hosting": {
+    "public": "public",
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "wordpress"
+      }
+    ]
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

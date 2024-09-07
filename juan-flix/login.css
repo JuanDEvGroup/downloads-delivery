@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+.login-container {
+    background-color: #1e1e1e; /* Fondo del contenedor */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #e50914; /* Rojo Netflix */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #b3b3b3; /* Texto gris claro */
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #333; /* Fondo del input */
+    color: #fff; /* Texto del input */
+}
+
+button {
+    width: 100%;
+      margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e50914; /* Rojo Netflix */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b20710; /* Rojo más oscuro al pasar el cursor */
+}
+
+#message {
+    margin-top: 10px;
+    color: #e50914; /* Rojo Netflix */
+}

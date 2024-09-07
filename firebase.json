@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "juan-flix",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
