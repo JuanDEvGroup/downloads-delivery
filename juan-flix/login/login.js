@@ -2,10 +2,10 @@ const users = {
     'juan': { password: 'j24', name: 'Juan Andres', url: 'premium-j.html' },
     'userad1': { password: 'p1try', name: 'Usuario Anónimo', url: 'premium-y.html' },
     'yolanda': { password: 'y4', name: 'Yolanda Camacho', url: 'index.html' },
-    'user2': { password: 'pl2f', name: 'Usuario Anónimo', url: 'premium- (2).html' },
-    'user3': { password: 'pl5f', name: 'Usuario Anónimo', url: 'premium- (3).html' },
-    'user4': { password: 'plr3f', name: 'Usuario Anónimo', url: 'premium- (4).html' },
-    'user5': { password: 'l5g', name: 'Usuario Anónimo', url: 'premium- (5).html' }
+    'user2': { password: 'pl2f', name: 'Usuario Anónimo', url: 'premium-2.html' },
+    'user3': { password: 'pl5f', name: 'Usuario Anónimo', url: 'premium-3.html' },
+    'user4': { password: 'plr3f', name: 'Usuario Anónimo', url: 'premium-4.html' },
+    'user5': { password: 'l5g', name: 'Usuario Anónimo', url: 'premium-5.html' }
 };
 
 function validateLogin() {
