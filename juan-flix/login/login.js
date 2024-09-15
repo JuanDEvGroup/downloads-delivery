@@ -1,7 +1,7 @@
 const users = {
     'juan': { password: 'j24', name: 'Juan Andres', url: 'premium-j.html' },
     'userad1': { password: 'p1try', name: 'Usuario Anónimo', url: 'premium-y.html' },
-    'yolanda': { password: 'y4', name: 'Yolanda Camacho', url: 'index.html' },
+    'yolanda': { password: 'y4', name: 'Yolanda Camacho', url: 'premium-yl.html' },
     'user2': { password: 'pl2f', name: 'Usuario Anónimo', url: 'premium-2.html' },
     'user3': { password: 'pl5f', name: 'Usuario Anónimo', url: 'premium-3.html' },
     'user4': { password: 'plr3f', name: 'Usuario Anónimo', url: 'premium-4.html' },
@@ -10,6 +10,7 @@ const users = {
     'sandrita': { password: 's2024', name: 'Sandrita Rivera', url: 'premium-sr.html' },
     'natalia': { password: 'n2024', name: 'Natalia Rincón', url: 'premium-nr.html' },
     'brayan': { password: 'br2024', name: 'Brayan Rincón', url: 'premium-br.html' },
+    'nerly': { password: 'nl204', name: 'Nerly Yepes', url: 'premium-nl.html' },
     'user5': { password: 'l5g', name: 'Usuario Anónimo', url: 'premium-5.html' }
 };
 
