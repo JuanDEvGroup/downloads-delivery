@@ -3,6 +3,127 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mi Lista de Películas y Series</title>
 <style>
+  /* Global styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  color: #e50914;
+  margin-bottom: 20px;
+}
+
+/* Container styles */
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* List styles */
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.movie-item {
+  width: 200px;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movie-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.movie-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.movie-item .title {
+  margin-top: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.movie-item .remove {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+.movie-item:hover .remove {
+  display: block;
+}
+
+/* Add movie form styles */
+
+#addMovieForm {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#addMovieForm select, #addMovieForm button {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  color: #fff;
+  cursor: pointer;
+}
+
+#addMovieForm button:hover {
+  background-color: #333;
+}
+
+/* Error message styles */
+
+.error {
+  color: #e50914;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
   body {
     font-family: Arial, sans-serif;
     background-color: #141414;
@@ -75,9 +196,32 @@
     text-align: center;
     margin-top: 10px;
   }
+
+  /* Import the Netflix font */
+@font-face {
+  font-family: 'Netflix Sans';
+  src: url('https://fonts.gstatic.com/s/netflixsans/v5/i7dPIfZjpOXOWVfj1Qw.woff2') format('woff2');
+}
+
+/* Logo styles */
+
+.logo {
+  font-family: 'Netflix Sans', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #e50914;
+  text-align: center;
+  margin: 20px auto;
+}
+
+
 </style>
 </head>
 <body>
+  <div class="logo">
+  JUAN FLIX+
+</div>
+
   <div class="container">
     <h1>Mi Lista</h1>
     <div class="list" id="myList">
@@ -93,6 +237,7 @@
     <div id="error" class="error"></div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
   <script>
     const myList = document.getElementById('myList');
     const addMovieForm = document.getElementById('addMovieForm');
@@ -100,40 +245,41 @@
     const errorElement = document.getElementById('error');
     let movies = [];
     let availableMovies = [
-      { title: 'Stranger Things', image: 'https://websimdemo.com/netflix-style-list/images/stranger-things.jpg' },
-      { title: 'The Crown', image: 'https://websimdemo.com/netflix-style-list/images/the-crown.jpg' },
-      { title: 'Narcos', image: 'https://websimdemo.com/netflix-style-list/images/narcos.jpg' },
-      { title: 'Black Mirror', image: 'https://websimdemo.com/netflix-style-list/images/black-mirror.jpg' },
-      { title: 'Breaking Bad', image: 'https://websimdemo.com/netflix-style-list/images/breaking-bad.jpg' },
-      { title: 'The Witcher', image: 'https://websimdemo.com/netflix-style-list/images/the-witcher.jpg' },
-      { title: 'Money Heist', image: 'https://websimdemo.com/netflix-style-list/images/money-heist.jpg' },
-      { title: 'Dark', image: 'https://websimdemo.com/netflix-style-list/images/dark.jpg' }
+      { title: 'Loca por las compras', image: 'poster-lpc.jpeg' },
+      { title: 'Mi villano favorito 4', image: 'poster-mvf4.jpeg' },
+      { title: 'UP: Una aventura en las alturas', image: 'poster-up.jpeg' },
+      { title: 'Un vecino gruñón', image: 'poster-uvg.jpeg' },
+      { title: 'Planeta de los simios: Nuevo Reino', image: 'poster-pdls.jpeg' },
+      { title: 'Daniel el Travieso', image: 'poster-det.jpeg' },
+      { title: 'Los pinguinos de papá', image: 'poster-lpdp.jpeg' },
+      { title: 'IntensaMente 2', image: 'poster-im2.jpeg' },
+      { title: 'Pollitos en Fuga 1', image: 'poster-pef1.jpeg' },
+      { title: 'Pollitos en Fuga 2', image: 'poster-pef2.jpeg' },
+      { title: 'Babe: el puerquito valiente', image: 'poster-bepv.jpeg' },
+      { title: 'Rio 2', image: 'poster-r1.jpeg' },
+      { title: 'El rescate de Ruby', image: 'poster-erdr.jpeg' },
+      { title: 'Como entrenar a tu dragon 1', image: 'poster-ceatd1.jpg' },
+      { title: 'Como entrenar a tu dragon 2', image: 'poster-ceatd2.jpeg' },
+      { title: 'Como entrenar a tu dragon 3', image: 'poster-ceatd3.jpeg' },
+      { title: 'Megamente 1', image: 'poster-m1.jpeg' },
+      { title: 'Megamente 2', image: 'poster-m2.jpeg' },
+       { title: 'Naufrago', image: 'poster-n.jpeg' },
+       { title: 'La era de hielo 1', image: 'poster-ledh1.jpeg' },
+       { title: 'La era de hielo 2', image: 'poster-ledh2.jpeg' },
+       { title: 'La era de hielo 3', image: 'poster-ledh3.jpeg' },
+       { title: 'La era de hielo 4', image: 'poster-ledh4.jpeg' },
+       { title: 'La era de hielo 5', image: 'poster-ledh5.jpeg' },
+       { title: 'La Propuesta', image: '' },
+       { title: 'Mis huellas a casa', image: '' },
+       { title: 'Mi pobre angelito 1', image: '' },
+        { title: 'Mi pobre angelito 2', image: '' },
+         { title: 'Mi pobre angelito 3', image: '' },
+      { title: '', image: 'https://websimdemo.com/netflix-style-list/images/dark.jpg' }
     ];
-
-    function setCookie(name, value, days) {
-      let expires = "";
-      if (days) {
-        const date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        expires = "; expires=" + date.toUTCString();
-      }
-      document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-    }
-
-    function getCookie(name) {
-      const nameEQ = name + "=";
-      const ca = document.cookie.split(';');
-      for(let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-      }
-      return null;
-    }
 
     function loadMovies() {
       try {
-        const storedMovies = getCookie('movies');
+        const storedMovies = Cookies.get('movies');
         if (storedMovies) {
           movies = JSON.parse(storedMovies);
         }
@@ -150,7 +296,7 @@
         const itemElement = document.createElement('div');
         itemElement.className = 'item';
         itemElement.innerHTML = `
-          <img src="${movie.image}" alt="${movie.title}" width="200" height="300" onerror="this.src='https://via.placeholder.com/200x300?text=Image+Not+Found'">
+          <img src="https://juandevgroup.github.io/downloads-delivery/juan-flix/login/img/${movie.image}" alt="${movie.title}" width="200" height="300" >
           <div class="title">${movie.title}</div>
           <button class="remove" onclick="removeMovie(${index})">×</button>
         `;
@@ -178,7 +324,7 @@
 
     function saveMovies() {
       try {
-        setCookie('movies', JSON.stringify(movies), 30); // Guarda por 30 días
+        Cookies.set('movies', JSON.stringify(movies), { expires: 365, secure: true, sameSite: 'strict' });
       } catch (error) {
         console.error('Error saving movies to cookies:', error);
         errorElement.textContent = 'Error al guardar las películas. Los cambios no se mantendrán después de cerrar el navegador.';
