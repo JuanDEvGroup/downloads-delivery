@@ -5,6 +5,8 @@ const users = {
     'user2': { password: 'pl2f', name: 'Usuario Anónimo', url: 'premium-2.html' },
     'user3': { password: 'pl5f', name: 'Usuario Anónimo', url: 'premium-3.html' },
     'user4': { password: 'plr3f', name: 'Usuario Anónimo', url: 'premium-4.html' },
+    'fredy': { password: 'fredy24', name: 'Fredy Durango', url: 'premium-fd.html' },
+    'sandra': { password: 'sandra24', name: 'Sandra Durango', url: 'premium-sd.html' },
     'user5': { password: 'l5g', name: 'Usuario Anónimo', url: 'premium-5.html' }
 };
 
