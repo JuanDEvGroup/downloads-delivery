@@ -2,6 +2,7 @@ const users = {
     'juan': { password: 'j24', name: 'Juan Andres', url: 'premium-j.html' },
     'userad1': { password: 'p1try', name: 'Usuario Anónimo', url: 'premium-y.html' },
     'yolanda': { password: 'y4', name: 'Yolanda Camacho', url: 'premium-yl.html' },
+    'user1': { password: 'pl1rf', name: 'Usuario Anónimo', url: 'premium-1.html' },
     'user2': { password: 'pl2f', name: 'Usuario Anónimo', url: 'premium-2.html' },
     'user3': { password: 'pl5f', name: 'Usuario Anónimo', url: 'premium-3.html' },
     'user4': { password: 'plr3f', name: 'Usuario Anónimo', url: 'premium-4.html' },
@@ -12,7 +13,8 @@ const users = {
     'brayan': { password: 'br2024', name: 'Brayan Rincón', url: 'premium-br.html' },
     'nerly': { password: 'nl204', name: 'Nerly Yepes', url: 'premium-nl.html' },
     'alfo': { password: 'al204', name: 'Alfonso Yepes', url: 'premium-ay.html' },
-    'user5': { password: 'l5g', name: 'Usuario Anónimo', url: 'premium-5.html' }
+    'user5': { password: 'l5g', name: 'Usuario Anónimo', url: 'premium-5.html' },
+    'user6': { password: 'cl12', name: 'Usuario Anónimo', url: 'premium-6.html' }
 };
 
 function validateLogin() {
