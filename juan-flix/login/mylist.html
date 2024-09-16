@@ -298,7 +298,7 @@ h1 {
         const itemElement = document.createElement('div');
         itemElement.className = 'item';
         itemElement.innerHTML = `
-         <a href="${movie.link}"><img src="https://juandevgroup.github.io/downloads-delivery/juan-flix/login/img/${movie.image}" alt="${movie.title}" width="200" height="300" ></a>
+         <a href="${movie.link}" target="_blank"><img src="https://juandevgroup.github.io/downloads-delivery/juan-flix/login/img/${movie.image}" alt="${movie.title}" width="200" height="300" ></a>
           <div class="title">${movie.title}</div>
           <button class="remove" onclick="removeMovie(${index})">×</button>
         `;
