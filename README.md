@@ -8,7 +8,7 @@ _[Juan Flix+](https://juandevgroup.github.io/downloads-delivery/) es un sitio pa
 * Interfaz intuitiva
 * Seguro
 * Sin problemas de conexón
-> Gracias por ver Downloads Delivery
+> Gracias por ver Juan Flix+
 
 
 **_Powered by [Juan Systems API](https://juandevgroup.github.io/)_**
