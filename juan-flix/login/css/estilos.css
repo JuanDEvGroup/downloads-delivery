@@ -80,9 +80,9 @@ header nav a.activo {
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
 .pelicula-principal {
 	font-size: 16px;
-	min-height: 40.62em;
+	min-height: 20.62em;
 	color: #fff;
-	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/carl-russell-dug.jpg);
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%);
 	background-position: center center;
 	background-size: cover;
 	margin-bottom: 3.12em;
@@ -91,7 +91,6 @@ header nav a.activo {
 }
 
 .pelicula-principal .contenedor {
-	margin: 0 auto;
 	margin-bottom: 6.25em;
 }
 
