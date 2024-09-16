@@ -1,4 +1,4 @@
-<html><head><base href="https://websimdemo.com/netflix-style-list/">
+<html><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mi Lista de Películas y Series</title>
@@ -245,38 +245,38 @@ h1 {
     const errorElement = document.getElementById('error');
     let movies = [];
     let availableMovies = [
-      { title: 'Loca por las compras', image: 'poster-lpc.jpeg' },
-      { title: 'Mi villano favorito 4', image: 'poster-mvf4.jpeg' },
-      { title: 'UP: Una aventura en las alturas', image: 'poster-up.jpeg' },
-      { title: 'Un vecino gruñón', image: 'poster-uvg.jpeg' },
-      { title: 'Planeta de los simios: Nuevo Reino', image: 'poster-pdls.jpeg' },
-      { title: 'Daniel el Travieso', image: 'poster-det.jpeg' },
-      { title: 'Los pinguinos de papá', image: 'poster-lpdp.jpeg' },
-      { title: 'IntensaMente 2', image: 'poster-im2.jpeg' },
-      { title: 'Pollitos en Fuga 1', image: 'poster-pef1.jpeg' },
-      { title: 'Pollitos en Fuga 2', image: 'poster-pef2.jpeg' },
-      { title: 'Babe: el puerquito valiente', image: 'poster-bepv.jpeg' },
-      { title: 'Rio 2', image: 'poster-r1.jpeg' },
-      { title: 'El rescate de Ruby', image: 'poster-erdr.jpeg' },
-      { title: 'Como entrenar a tu dragon 1', image: 'poster-ceatd1.jpg' },
-      { title: 'Como entrenar a tu dragon 2', image: 'poster-ceatd2.jpeg' },
-      { title: 'Como entrenar a tu dragon 3', image: 'poster-ceatd3.jpeg' },
-      { title: 'Megamente 1', image: 'poster-m1.jpeg' },
-      { title: 'Megamente 2', image: 'poster-m2.jpeg' },
-       { title: 'Naufrago', image: 'poster-n.jpeg' },
-       { title: 'La era de hielo 1', image: 'poster-ledh1.jpeg' },
-       { title: 'La era de hielo 2', image: 'poster-ledh2.jpeg' },
-       { title: 'La era de hielo 3', image: 'poster-ledh3.jpeg' },
-       { title: 'La era de hielo 4', image: 'poster-ledh4.jpeg' },
-       { title: 'La era de hielo 5', image: 'poster-ledh5.jpeg' },
-       { title: 'La Propuesta', image: 'poster-lp.jpeg' },
-       { title: 'Mis huellas a casa', image: 'poster-mhac.jpg' },
-       { title: 'Mi pobre angelito 1', image: 'poster-mpa1.jpg' },
-        { title: 'Mi pobre angelito 2', image: 'poster-mpa2.jpeg' },
-         { title: 'Mi pobre angelito 3', image: 'poster-mpa3.jpeg' },
-         { title: 'El Joven Manos De Tijera', image: 'poster-ejmdt.jpg' },
-         { title: 'Paternidad', image: 'poster-p.jpeg' },
-      { title: '', image: 'https://websimdemo.com/netflix-style-list/images/dark.jpg' }
+      { title: 'Loca por las compras', image: 'poster-lpc.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-loca-por-las-compras' },
+      { title: 'Mi villano favorito 4', image: 'poster-mvf4.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-mi-villano-favorito-4' },
+      { title: 'UP: Una aventura en las alturas', image: 'poster-up.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-up' },
+      { title: 'Un vecino gruñón', image: 'poster-uvg.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-un-vecino-gru%C3%B1%C3%B3n' },
+      { title: 'Planeta de los simios: Nuevo Reino', image: 'poster-pdls.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-planeta-de-los-simios' },
+      { title: 'Daniel el Travieso', image: 'poster-det.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-daniel-el-travieso' },
+      { title: 'Los pinguinos de papá', image: 'poster-lpdp.jpeg', link: 'https://sites.google.com/view/juan-flix/play-movie-3r3434t44' },
+      { title: 'IntensaMente 2', image: 'poster-im2.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-intensamente-2' },
+      { title: 'Pollitos en Fuga 1', image: 'poster-pef1.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-pollitos-en-fuga-1' },
+      { title: 'Pollitos en Fuga 2', image: 'poster-pef2.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-pollitos-en-fuga-2' },
+      { title: 'Babe: el puerquito valiente', image: 'poster-bepv.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-babe-el-puerquito-valiente' },
+      { title: 'Rio 2', image: 'poster-r1.jpeg', link: 'https://sites.google.com/view/juan-flix/play-movie-r734ty48ty74y8' },
+      { title: 'El rescate de Ruby', image: 'poster-erdr.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-el-rescate-de-ruby' },
+      { title: 'Como entrenar a tu dragon 1', image: 'poster-ceatd1.jpg', link: 'https://sites.google.com/view/juan-flix/KYUT9ZQev2ZUpRCalugpmPDfuwdpqhohHH1TimrthqAPcs6cI45jygacbtuFw3wH' },
+      { title: 'Como entrenar a tu dragon 2', image: 'poster-ceatd2.jpeg', link: 'https://sites.google.com/view/juan-flix/ubPrHz9uMjIgVXwu4FWcLuylGd1sGmjgl3iaseD49Uo3iPPQphZYJS3MRMVeWd9s' },
+      { title: 'Como entrenar a tu dragon 3', image: 'poster-ceatd3.jpeg', link: 'https://sites.google.com/view/juan-flix/oIPwKPCmP28z7kFXAmrDfIZCjvKga0UA8R9I8dP2P7tOZQqleaGXTiAsH8pOE7vq' },
+      { title: 'Megamente 1', image: 'poster-m1.jpeg', link: 'https://sites.google.com/view/juan-flix/sDGPe0Umg1Y53vz8KbhmRBw0GGGRk8BtBslOXKFyRg2ErQJpPjavprj5Cf82UvSi' },
+      { title: 'Megamente 2', image: 'poster-m2.jpeg', link: 'https://sites.google.com/view/juan-flix/70RuzQv2wfxVad82W0iTAOJliQc8ujy0k6wPVjzcK8mxdZX6rgbtIQk5XlWUE6Rh' },
+       { title: 'Naufrago', image: 'poster-n.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-m-naufrago' },
+       { title: 'La era de hielo 1', image: 'poster-ledh1.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-la-era-de-hielo-1' },
+       { title: 'La era de hielo 2', image: 'poster-ledh2.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-la-era-de-hielo-2' },
+       { title: 'La era de hielo 3', image: 'poster-ledh3.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-la-era-de-hielo-3' },
+       { title: 'La era de hielo 4', image: 'poster-ledh4.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-la-era-de-hielo-4' },
+       { title: 'La era de hielo 5', image: 'poster-ledh5.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-la-era-de-hielo-5' },
+       { title: 'La Propuesta', image: 'poster-lp.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-la-propuesta' },
+       { title: 'Mis huellas a casa', image: 'poster-mhac.jpg', link: 'https://sites.google.com/view/juan-flix/ver-mis-huellas-a-casa' },
+       { title: 'Mi pobre angelito 1', image: 'poster-mpa1.jpg', link: 'https://sites.google.com/view/juan-flix/ver-mi-pobre-angelito-1' },
+        { title: 'Mi pobre angelito 2', image: 'poster-mpa2.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-mi-pobre-angelito-2' },
+         { title: 'Mi pobre angelito 3', image: 'poster-mpa3.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-mi-pobre-angelito-3' },
+         { title: 'El Joven Manos De Tijera', image: 'poster-ejmdt.jpg', link: 'https://sites.google.com/view/juan-flix/ver-el-joven-manos-de-tijeras' },
+         { title: 'Paternidad', image: 'poster-p.jpeg', link: 'https://sites.google.com/view/juan-flix/ver-paternidad' },
+      { title: '', image: '', link: '' }
     ];
 
     function loadMovies() {
@@ -298,7 +298,7 @@ h1 {
         const itemElement = document.createElement('div');
         itemElement.className = 'item';
         itemElement.innerHTML = `
-          <img src="https://juandevgroup.github.io/downloads-delivery/juan-flix/login/img/${movie.image}" alt="${movie.title}" width="200" height="300" >
+         <a href="${movie.link}"><img src="https://juandevgroup.github.io/downloads-delivery/juan-flix/login/img/${movie.image}" alt="${movie.title}" width="200" height="300" ></a>
           <div class="title">${movie.title}</div>
           <button class="remove" onclick="removeMovie(${index})">×</button>
         `;
@@ -306,9 +306,9 @@ h1 {
       });
     }
 
-    function addMovie(title, image) {
+    function addMovie(title, image, link) {
       if (!movies.some(movie => movie.title === title)) {
-        movies.push({ title, image });
+        movies.push({ title, image, link });
         saveMovies();
         displayMovies();
         updateAvailableMovies();
@@ -350,7 +350,7 @@ h1 {
       const selectedTitle = movieSelect.value;
       if (selectedTitle) {
         const selectedMovie = availableMovies.find(movie => movie.title === selectedTitle);
-        addMovie(selectedMovie.title, selectedMovie.image);
+        addMovie(selectedMovie.title, selectedMovie.image, selectedMovie.link);
         movieSelect.value = '';
         errorElement.textContent = '';
       } else {
