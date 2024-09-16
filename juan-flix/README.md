@@ -1,6 +1,14 @@
-# Carousel de Películas Estilo NETFLIX con HTML5, CSS3 y Javascript.
-### [Tutorial: https://youtu.be/1ukG4FTmdWQ](https://youtu.be/1ukG4FTmdWQ)
+![dev](https://github.com/user-attachments/assets/5251fc22-78b8-4569-940f-de6aaa40dbb0)
 
-![Carousel de Películas Estilo NETFLIX con HTML5, CSS3 y Javascript.](https://raw.githubusercontent.com/falconmasters/p-gina-estilo-netflix/carousel/img/thumb.png)
+# Bienvenido a [Juan Flix+](https://juandevgroup.github.io/downloads-delivery/)
+_[Juan Flix+](https://juandevgroup.github.io/downloads-delivery/) es un sitio para ver películas.
+**Se actualiza cada semana**
 
-Por: [FalconMasters](http://www.falconmasters.com)
+
+* Interfaz intuitiva
+* Seguro
+* Sin problemas de conexón
+> Gracias por ver Juan Flix+
+
+
+**_Powered by [Juan Systems API](https://juandevgroup.github.io/)_**
