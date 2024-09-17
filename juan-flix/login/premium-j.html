@@ -95,6 +95,8 @@
         </div><!-- Fin del carousel container -->
       
       <script>
+        // Inside the iframe
+parent.document.body.style.backgroundColor = 'red';
       const carousel = document.querySelector('.carousel');
       const movies = carousel.querySelectorAll('.movie');
       const prevBtn = document.querySelector('.nav-button.prev');
