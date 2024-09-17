@@ -33,3 +33,24 @@ function validateLogin() {
         message.style.color = 'red';
     }
 }
+
+
+  const url = new URL(window.location.href);
+  const idParam = url.searchParams.get('id');
+
+  if (idParam === 'list03false') {
+
+    // Quitar parámetro id de la URL
+    url.searchParams.delete('id');
+    window.history.pushState({}, '', url.href);
+
+    // Mostrar el error de my list
+    message.textContent = 'No habías iniciado sesión para entrar a tu lista';
+        message.style.color = 'red';
+
+        // Establece un tiempo de espera de 5 segundos
+setTimeout(function() {
+    window.location.href = 'https://sites.google.com/view/juan-flix';
+  }, 5000);
+
+  }

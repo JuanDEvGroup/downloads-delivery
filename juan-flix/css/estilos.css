@@ -80,9 +80,9 @@ header nav a.activo {
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
 .pelicula-principal {
 	font-size: 16px;
-	min-height: 40.62em;
+	min-height: 20.62em;
 	color: #fff;
-	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/carl-russell-dug.jpg);
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%);
 	background-position: center center;
 	background-size: cover;
 	margin-bottom: 3.12em;
@@ -91,7 +91,6 @@ header nav a.activo {
 }
 
 .pelicula-principal .contenedor {
-	margin: 0 auto;
 	margin-bottom: 6.25em;
 }
 
@@ -312,3 +311,136 @@ footer {
 .boton i {
 	margin-right: 1.25em;
 }
+
+/* ---- ----- ----- Video ----- ----- ----- */
+
+  /* Ocultar los controles del video */
+  video::-webkit-media-controls {
+	display: none;
+  }
+
+
+  body {
+	background-color: #000; /* Fondo negro */
+	margin: 0; /* Eliminar margen por defecto */
+	padding: 0; /* Eliminar padding por defecto */
+  }
+
+
+
+  /* ---- ----- ----- Nav-bar ----- ----- ----- */
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  body {
+	  font-family: 'Roboto', sans-serif;
+	  background-color: black;
+	  color: white;
+	  margin: 0;
+	  padding: 0;
+  }
+  .navbar {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  padding: 16px;
+  }
+  .navbar-left, .navbar-right {
+	  display: flex;
+	  align-items: center;
+  }
+  .navbar-left div, .navbar-right div {
+	  margin-right: 16px;
+  }
+  .navbar-left .netflix-logo {
+	  color: #e50914;
+	  font-size: 32px;
+	  font-weight: bold;
+  }
+  .navbar-left .browse, .navbar-right .search, .navbar-right .profile-name {
+	  color: #e50914;
+	  font-size: 18px;
+  }
+  .navbar-left .kids, .navbar-left .dvd, .navbar-right .search, .navbar-right .profile-name {
+	  color: white;
+	  font-size: 18px;
+  }
+  .navbar-right .profile {
+	  display: flex;
+	  align-items: center;
+  }
+  .navbar-right .profile img {
+	  border-radius: 4px;
+	  width: 30px;
+	  height: 30px;
+	  margin-right: 8px;
+  }
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+
+  body {
+	font-family: Arial, sans-serif;
+	background-color: #141414;
+	color: white;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+  }
+  .carousel-container {
+	position: relative;
+	width: 100vw;
+	height: 56.25vw; /* 16:9 Aspect Ratio */
+	max-height: 80vh;
+	overflow: hidden;
+  }
+  .carousel {
+	display: flex;
+	transition: transform 0.5s ease;
+	height: 100%;
+  }
+  .movie {
+	flex: 0 0 100%;
+	position: relative;
+	overflow: hidden;
+  }
+  .movie img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  .movie-info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 20px;
+	background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+  }
+  h2 {
+	margin: 0 0 10px 0;
+	font-size: 2.5vw;
+  }
+  p {
+	margin: 0;
+	font-size: 1.5vw;
+  }
+  .nav-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	border: none;
+	font-size: 2rem;
+	padding: 10px 15px;
+	cursor: pointer;
+	z-index: 10;
+  }
+  .nav-button:hover {
+	background-color: rgba(255,255,255,0.2);
+  }
+  .nav-button.prev {
+	left: 10px;
+  }
+  .nav-button.next {
+	right: 10px;
+  }
