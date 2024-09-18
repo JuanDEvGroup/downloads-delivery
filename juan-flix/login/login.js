@@ -14,6 +14,7 @@ const users = {
     'nerly': { password: 'nl204', name: 'Nerly Yepes', url: 'premium-nl.html' },
     'alfo': { password: 'al204', name: 'Alfonso Yepes', url: 'premium-ay.html' },
     'user5': { password: 'l5g', name: 'Usuario Anónimo', url: 'premium-5.html' },
+    'danny': { password: 'd204', name: 'Danny Esteban', url: 'premium-dn.html' },
     'user6': { password: 'cl12', name: 'Usuario Anónimo', url: 'premium-6.html' }
 };
 
