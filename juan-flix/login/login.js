@@ -46,7 +46,7 @@ function validateLogin() {
     window.history.pushState({}, '', url.href);
 
     // Mostrar el error de my list
-    message.textContent = 'No habías iniciado sesión para entrar a tu lista';
+    message.textContent = 'No habías iniciado sesión para entrar a tu lista o has recargado la web.';
         message.style.color = 'red';
 
         // Establece un tiempo de espera de 5 segundos
