@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Puedes descargar el script e incluirlo de manera local si así prefieres-->
+	<script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script>
+	<title>Codigo juan-flix</title>
+</head>
+
+<body>
+	<img alt="Código QR" id="codigo">
+	<script>
+		new QRious({
+			element: document.querySelector("#codigo"),
+			value: "https://jflixplus.web.app", // La URL o el texto
+			size: 200,
+			backgroundAlpha: 0, // 0 para fondo transparente
+			foreground: "#ffff", // Color del QR
+			level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
+		});
+	</script>
+</body>
+
+</html>
